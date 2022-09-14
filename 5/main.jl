@@ -1,14 +1,5 @@
 using LinearAlgebra
 
-A = [1 1 1 ;
-     4 4 2 ;
-     2 1 -1]
-
-B = [1; 2; 0]
-
-x = A \ B
-println(x)
-
 function jacobi(A, B, k, error)
   n = size(B,1)
   X = zeros(n)
@@ -33,7 +24,17 @@ end
 
 error = 10^-3
 
-x = jacobi(A, B, 10, error)
+
+A = [1 1 1 ;
+     4 4 2 ;
+     2 1 -1]
+
+B = [1; 2; 0]
+
+x = A \ B
+println(x)
+
+x = jacobi(A, B, 100, error)
 println(x)
 
 function seidel(A, B, k, error)
@@ -59,6 +60,15 @@ function seidel(A, B, k, error)
   return X
 end
 
+A = [1 1 1 ;
+     4 4 2 ;
+     2 1 -1]
 
-X = seidel(A, B, 100, error)
-println(X)
+
+B = [1; 2; 0]
+
+x = A \ B
+println(x)
+
+x = seidel(A, B, 100, error)
+println(x)
