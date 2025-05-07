@@ -6,9 +6,7 @@ Este repositório contém uma implementação simples em Julia para calcular uma
 
 A função `e(x)` calcula o valor de \( e^x \) por meio da soma da série infinita:
 
-\[
-e^x = \sum_{n=0}^{\infty} \frac{x^n}{n!}
-\]
+e^x = 1 + x/1! + x^2/2! + x^3/3! + ... + x^n/n!
 
 O algoritmo adiciona sucessivos termos da série até que o termo atual seja pequeno o suficiente para ser considerado zero na precisão de ponto flutuante da máquina.
 
