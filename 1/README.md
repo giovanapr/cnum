@@ -1,10 +1,13 @@
-## Polinômio de Segundo Grau
+# Função de Segundo Grau 
 
-Define uma função chamada fx com 4 parâmetros: x, a, b, c.
+Este repositório contém uma implementação simples de uma função de segundo grau em Julia, usada para calcular o valor de `y = ax² + bx + c` para um dado `x`.
 
-Dentro da função fx, é definida uma função anônima y(n), que representa um polinômio de segundo grau:
+## 📘 Descrição
 
-y(n)=a⋅n2+b⋅n+c
-y(n)=a⋅n2+b⋅n+c
+A função `fx(x, a, b, c)` recebe quatro argumentos:
 
-Essa função y é chamada com o valor x: y(x), e o resultado é retornado.
+- `x`: valor para o qual se deseja calcular o polinômio
+- `a`, `b`, `c`: coeficientes da equação quadrática
+
+Ela retorna o valor de `y` calculado com base na fórmula:
+
